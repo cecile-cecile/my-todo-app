@@ -3,6 +3,11 @@ import functions
 
 todos = functions.get_todos()
 
+st.set_page_config(
+    page_title="My TODO App",
+    page_icon=":memo"
+)
+
 
 def add_todo():
     new_todo = st.session_state["new_todo"] + "\n"
